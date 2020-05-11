@@ -9,9 +9,11 @@
 //dragonMapper should return the the new array. You should
 //use the built-in array method .map
   
-  //Code here
-
-
+function dragonMapper (arr) {
+  let newarr = arr.map(arr => arr+"...here be dragons");{
+    return newarr
+  }
+  }
 
 //////////////////PROBLEM 2////////////////////
 
@@ -20,7 +22,14 @@
 //does NOT have the key favoriteCookie.
 //cookieLoversOnly should return the filtered array.
   
-  //Code here
+
+//arr = [let ron = {favoriteCookie: "chocolate chip"}, let ben = {favoriteCookie: "peanutbutter"}]
+
+function cookieLoversOnly (arr){
+  let filteredArr = arr.filter(e=>e.favoriteCookie); {
+  }
+  return filteredArr
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -34,7 +43,7 @@
 //Hint: there is an array method for this.
 
 
-  //Code here
+  let changeValue = (arr,cb) => arr.forEach( e=>cb(e))
 
 
 
@@ -46,7 +55,7 @@
 //of multiplying all the elements together)
 //Return the product.
   
-  //Code here
+ let findProduct = (arr) => arr.reduce((acc,element) => acc*element)
 
 
 //////////////////PROBLEM 5////////////////////
@@ -63,10 +72,10 @@
 // character at index 2 of "wide": "d"
 // cipherize will return: "d"
 
-  //Code here
-
-
-
+let cipherize = (arr,string) => {
+  let character = string.charAt(arr.indexOf(string))
+    return character
+}
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called reverseMe that takes in 
@@ -74,4 +83,16 @@
 //string. Use built-in methods for taking the string 
 //apart, reversing it, and putting it back together again.
 
-  //Code here
+// function reverseMe(str) {
+//   for (var reversedStr = "", i = str.length - 1; i >= 0; i--) {
+//     reversedStr += str[i];
+//   }
+//   return reversedStr;
+// }
+
+function reverseMe(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("");
+}

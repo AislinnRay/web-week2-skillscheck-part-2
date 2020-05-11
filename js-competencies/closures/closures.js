@@ -10,7 +10,13 @@
 //fairytale should return a function, which returns a string: 
 //time + ", " + heroine + " defeated the evil wizard with " + magicItem
 
-//Code here
+function fairytale (heroine,magicItem) {
+  let time = "A long time ago"
+  function fcntn() {
+    return time +", " + heroine +" defeated the evil wizard with "+ magicItem
+  }
+  return fcntn
+}
 
 
 //////////////////PROBLEM 2////////////////////
