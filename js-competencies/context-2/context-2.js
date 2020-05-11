@@ -97,7 +97,7 @@ function updatePerson(name, age, title) {
 // pass in the values "Anne Boleyn", 30, and "Queen of
 // England"; save the result to a variable named queenAnne.
 
-//Code here
+let queenAnne = updatePerson.call(person1,"Anne Boleyn", 30, "Queen of England")
 
 
 // Q2:
@@ -105,7 +105,7 @@ function updatePerson(name, age, title) {
 // pass in the values "Catherine of Aragon", 37, and "Former
 // Queen"; save the result to a variable named queenCatherine.
 
-//Code here
+let queenCatherine = updatePerson.apply(person2, ["Catherine of Aragon", 37, "Former Queen" ])
 
 
 // /////////////////Problem 3//////////////////
@@ -134,19 +134,19 @@ var hampton = new Castle('Hampton Court', 'England', 'red', 'bricks', false);
 // var q1CastleContext = "explicit"
 // var q1CastleContext = "implicit"
 // var q1CastleContext = "default"
-// var q1CastleContext = 'new';
+var q1CastleContext = 'new';
 
 
 // Q2:
 // Run the getCastle method on chambord, and
 // save the result to a variable ran chambordInfo.
 
-// CODE HERE
+let chambordInfo = chambord.getCastle()
 
 
 // What was 'this' when you ran chambord.getCastle()?
 
 // var getCastleContext = "Castle"
-// var getCastleContext = 'chambord';
+var getCastleContext = 'chambord';
 // var getCastleContext = "new"
 // var getCastleContext = "window"
